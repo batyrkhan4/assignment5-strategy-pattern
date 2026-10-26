@@ -2,7 +2,7 @@ import context.Calculator;
 import strategy.AddStrategy;
 import strategy.DivideStrategy;
 import strategy.MultiplyStrategy;
-import strategy.SubstractStrategy;
+import strategy.SubtractStrategy;
 
 public class Main {
     public static void main(String[] args) {
@@ -13,7 +13,7 @@ public class Main {
 
         System.out.println("Addition: " + calculator.calculate(a, b));
 
-        calculator.setStrategy(new SubstractStrategy());
+        calculator.setStrategy(new SubtractStrategy());
         System.out.println("Substraction: " + calculator.calculate(a, b));
 
         calculator.setStrategy(new MultiplyStrategy());
